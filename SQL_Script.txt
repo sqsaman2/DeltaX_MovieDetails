@@ -1,0 +1,15 @@
+----- to Create DataBase with name MovieDetails ------
+
+CREATE DATABASE [MovieDetails]
+ CONTAINMENT = NONE
+ ON  PRIMARY 
+( NAME = N'MovieDetails', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL15.SQLEXPRESS\MSSQL\DATA\MovieDetails.mdf' , SIZE = 8192KB , MAXSIZE = UNLIMITED, FILEGROWTH = 65536KB )
+ LOG ON 
+( NAME = N'MovieDetails_log', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL15.SQLEXPRESS\MSSQL\DATA\MovieDetails_log.ldf' , SIZE = 8192KB , MAXSIZE = 2048GB , FILEGROWTH = 65536KB )
+ WITH CATALOG_COLLATION = DATABASE_DEFAULT
+GO
+
+
+
+----- To Update Database ----
+ packageManager Console - update-database
